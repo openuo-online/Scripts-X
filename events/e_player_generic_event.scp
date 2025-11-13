@@ -7,4 +7,8 @@ VERSION=X1
 [events e_player_generic_event]
 //Generic event to all players
 
+ON=@Login
+    ACCOUNT.LANG=CHT
+    RETURN 0
+
 [eof]
