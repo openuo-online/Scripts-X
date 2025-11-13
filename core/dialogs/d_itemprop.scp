@@ -30,6 +30,8 @@ dtext 525 180 193 General
 button 490 200 4026 4028 0 2 0
 dtext 525 200 1000 PROPS
 
+dtext 10 5 0b1 <BASEID>
+
 button 10 35 4005 4007 1 0 100
 dtext 45 35 0c1 Amount
 dcroppedtext 120 35 125 20 1000 <AMOUNT>

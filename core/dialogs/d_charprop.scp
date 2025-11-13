@@ -31,6 +31,8 @@ dtext 525 180 1000 SKILLS
 button 490 200 4029 4031 0 4 0
 dtext 525 200 1000 FLAGS
 
+dtext 10 5 0b1 <BASEID>
+
 button 10 35 4020 4022 0 0 0
 dtext 45 35 0c1 Action
 dcroppedtext 120 35 125 20 1000 <ACTION> (<GetCharActionName>)
@@ -74,6 +76,10 @@ dcroppedtext 120 215 125 20 1000 <UID>
 button 10 235 4020 4022 0 0 0
 dtext 45 235 0c1 Weight
 dcroppedtext 120 235 125 20 1000 <fval <WEIGHT>>/<fval <MAXWEIGHT>>
+
+button 10 255 4020 4022 0 0 0
+dtext 45 255 0c1 Obody
+dcroppedtext 120 255 195 20 1000 <obody>
 
 button 10 275 4005 4007 1 0 107
 dtext 45 275 0c1 Fame
