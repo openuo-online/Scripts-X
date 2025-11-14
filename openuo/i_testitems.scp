@@ -77,12 +77,31 @@ IF (<LOCAL.StartTime> == 0)
     SYSMESSAGE You haven't activated today's skill gain bonus yet.
     RETURN
 ENDIF
+
+// 获取当前游戏时间（毫秒）
 LOCAL.CurrentTime=<SERV.GAMETIME>
 LOCAL.ElapsedMs=<EVAL <LOCAL.CurrentTime>-<LOCAL.StartTime>>
-LOCAL.ElapsedHours=<EVAL <LOCAL.ElapsedMs>/3600000>
-LOCAL.BonusRemaining=<EVAL <LOCAL.BonusMax>-<LOCAL.ElapsedHours>>
-IF (<LOCAL.BonusRemaining> > 0)
-    SYSMESSAGE You have <DLOCAL.BonusRemaining> hours of skill gain bonus remaining today.
-ELSE
+
+// 检查是否已过期
+LOCAL.BonusMaxMs=<EVAL <LOCAL.BonusMax>*3600000>
+IF (<LOCAL.ElapsedMs> >= <LOCAL.BonusMaxMs>)
     SYSMESSAGE Your daily skill gain bonus has expired. It will reset at midnight.
+    RETURN
+ENDIF
+
+// 计算剩余时间
+LOCAL.RemainingMs=<EVAL <LOCAL.BonusMaxMs>-<LOCAL.ElapsedMs>>
+LOCAL.RemainingMinutes=<EVAL <LOCAL.RemainingMs>/60000>
+LOCAL.RemainingHours=<EVAL <LOCAL.RemainingMinutes>/60>
+LOCAL.RemainingMins=<EVAL <LOCAL.RemainingMinutes>%60>
+
+LOCAL.Multiplier=<TAG0.SKILLGAIN_BONUS_MULTIPLIER>
+IF (<LOCAL.Multiplier> == 0)
+    LOCAL.Multiplier=2
+ENDIF
+
+IF (<LOCAL.RemainingHours> > 0)
+    SYSMESSAGE Daily Bonus: <DLOCAL.Multiplier>x skill gain for <DLOCAL.RemainingHours>h <DLOCAL.RemainingMins>m remaining!
+ELSE
+    SYSMESSAGE Daily Bonus: <DLOCAL.Multiplier>x skill gain for <DLOCAL.RemainingMinutes> minutes remaining!
 ENDIF
