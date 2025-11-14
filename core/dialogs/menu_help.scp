@@ -11,7 +11,7 @@ VERSION=X1
 MENU MENU_PAGEGM
 
 [MENU MENU_PAGEGM] // PAGEGM is executed whenever someone presses the "Page GM" button
-SPHERE Main Support Menu
+OpenUO Main Support Menu
 
 ON=0 PAGE A GM: Sends a notice to the server administrators, if they are online. They can help you with almost all your in-game problems.
 MENU MENU_PAGEGM_3
@@ -30,8 +30,8 @@ MENU MENU_PAGEGM_4
 
 [MENU MENU_PAGEGM_2]
 Web Menu
-ON=0 SPHERE HOMEPAGE: Redirects you to the official SPHERE homepage.
-WEBLINK http:\\www.sphereserver.net
+ON=0 OpenUO HOMEPAGE: Redirects you to the official OpenUO homepage.
+WEBLINK https:\\openuo.online
 
 [MENU MENU_PAGEGM_3]
 GM Page Menu
@@ -65,8 +65,8 @@ LAYER=layer_special
 
 ON=@Create
 	ATTR=attr_invis|attr_decay
-	MORE1=10
-	MOREP=a_helpdesk
+	MORE1=5
+	MOREP=1495,1629,10,0	//Britain
 
 ON=@Equip
 	TIMER=1

@@ -48,7 +48,7 @@ ON=@UnEquip
 ON=@DClick
    // 双击时调用 f_checkbonus 函数
    SRC.f_checkbonus
-   RETURN 1
+   RETURN 0
 
 ON=@Timer
    // 每秒检测佩戴者的血量
