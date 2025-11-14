@@ -12,6 +12,11 @@ ON=@Login
     //ACCOUNT.LANG=CHT
     //RETURN 0
 
+ON=@AfterClick
+if (<LEVEL> > 0) && (<EXP> > 0)
+    LOCAL.CLICKMSGTEXT .= " Lv.<eval <LEVEL>>"
+endif
+
 ON=@ExpChange
 ARGN2=0
 SYSMESSAGEUA 88,,,,Your Exp 经验值 added <ARGN1>.
