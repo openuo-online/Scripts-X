@@ -21,7 +21,7 @@ CATEGORY=Test Items
 SUBSECTION=Special Armor
 DESCRIPTION=Training Gloves (Auto Healing)
 CanUse=can_u_human|can_u_elf
-ReqStr=70
+ReqStr=30
 ATTR=attr_magic|attr_newbie
 TEVENTS=ei_equipitem
 
