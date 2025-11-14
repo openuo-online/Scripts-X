@@ -74,3 +74,14 @@ SYSMESSAGE hour:<EVAL <TAG0.SKILLGAIN_BONUS_HOURS>> x:<EVAL <TAG0.SKILLGAIN_BONU
 [FUNCTION f_resetbonus]
 TAG0.SKILLGAIN_BONUS_DAY=
 TAG0.SKILLGAIN_BONUS_STARTTIME=
+
+[function f_is_party]   //是不是队友
+//party.members 队伍组员数量
+//party.MEMBER.<x> 队伍组员UID,x是0-9索引
+//party.ISSAMEPARTYOF <UID> 是不是同一个队伍
+if (<isinparty>)
+    if (<party.ISSAMEPARTYOF <ARGV0>>)
+        return 1
+    endif
+endif
+return 0
