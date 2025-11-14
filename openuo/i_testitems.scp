@@ -10,7 +10,7 @@ VERSION=X1
 
 [ITEMDEF i_test_platemail_gloves_healing]
 ID=i_platemail_gloves
-NAME=对练拳套
+NAME=Training Gloves
 TYPE=t_armor
 FLIP=1
 ARMOR=30
@@ -19,7 +19,7 @@ WEIGHT=2.0
 COLOR=05e5
 CATEGORY=Test Items
 SUBSECTION=Special Armor
-DESCRIPTION=对练拳套（自动回血）
+DESCRIPTION=Training Gloves (Auto Healing)
 CanUse=can_u_human|can_u_elf
 ReqStr=70
 ATTR=attr_magic|attr_newbie
