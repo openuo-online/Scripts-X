@@ -13,10 +13,10 @@ ON=@Login
     //RETURN 0
 
 ON=@ExpChange
-ARGN2=1
-sysmessage Your Exp +<ARGN1>
+ARGN2=0
+SYSMESSAGEUA 052,,,,Your Exp 经验值 added <ARGN1>.
 
 ON=@ExpLevelChange
-sysmessage Your Level changed to <ARGN1>
+SYSMESSAGEUA 052,,,,Your Level 等级 changed to <ARGN1>.
 
 [eof]
