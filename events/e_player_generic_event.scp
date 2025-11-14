@@ -8,7 +8,7 @@ VERSION=X1
 //Generic event to all players
 
 ON=@Login
-    say Welcome to OpenUO, a completely free world. Just enjoy and have fun!
+    SAYUA 063,,,,Welcome to OpenUO, a completely free world. Just enjoy and have fun!
     //ACCOUNT.LANG=CHT
     //RETURN 0
 
