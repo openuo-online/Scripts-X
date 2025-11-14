@@ -3508,8 +3508,8 @@ ON=@Create
    ITEM=random_weapon_mace_gargish
    ITEM=i_shepherds_crook,1,R2
 ON=@NPCRestock
-   SELL=VENDOR_S_RANCHER
-   BUY=VENDOR_B_RANCHER
+   //SELL=VENDOR_S_RANCHER
+   //BUY=VENDOR_B_RANCHER
 
 
 [CHARDEF c_scribe_gargoyle]
