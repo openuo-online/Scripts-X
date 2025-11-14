@@ -52,7 +52,7 @@ SOUND=snd_xx    //Preferably all chardefs should have sounds
 //Fixed values' properties and tags. Fixed only, ranges are not allowed here.
 DAM=15,20
 DAMFIRE=20
-FACTION=faction_demon   // defnames in lowercase
+FACTION_GROUP=faction_demon   // defnames in lowercase
 BLOODCOLOR=1
 TAG.BARDING.DIFF=95.0
 
