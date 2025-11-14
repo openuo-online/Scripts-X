@@ -8,15 +8,15 @@ VERSION=X1
 //Generic event to all players
 
 ON=@Login
-    SAYUA 063,,,,Welcome to OpenUO, a completely free world. Just enjoy and have fun!
+    SAYUA 052,,,,Welcome to OpenUO, a completely free world. Just enjoy and have fun!
     //ACCOUNT.LANG=CHT
     //RETURN 0
 
 ON=@ExpChange
 ARGN2=0
-SYSMESSAGEUA 063,,,,Your Exp 经验值 added <ARGN1>.
+SYSMESSAGEUA 88,,,,Your Exp 经验值 added <ARGN1>.
 
 ON=@ExpLevelChange
-SYSMESSAGEUA 063,,,,Your Level 等级 changed to <EVAL <LEVEL> + <ARGN1>>.
+SYSMESSAGEUA 88,,,,Your Level 等级 changed to <EVAL <LEVEL> + <ARGN1>>.
 
 [eof]
