@@ -17,6 +17,6 @@ ARGN2=0
 SYSMESSAGEUA 052,,,,Your Exp 经验值 added <ARGN1>.
 
 ON=@ExpLevelChange
-SYSMESSAGEUA 052,,,,Your Level 等级 changed to <ARGN1>.
+SYSMESSAGEUA 052,,,,Your Level 等级 changed to <LEVEL>.
 
 [eof]
