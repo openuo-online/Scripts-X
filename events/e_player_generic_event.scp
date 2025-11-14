@@ -14,9 +14,9 @@ ON=@Login
 
 ON=@ExpChange
 ARGN2=0
-SYSMESSAGEUA 052,,,,Your Exp 经验值 added <ARGN1>.
+SYSMESSAGEUA 063,,,,Your Exp 经验值 added <ARGN1>.
 
 ON=@ExpLevelChange
-SYSMESSAGEUA 052,,,,Your Level 等级 changed to <LEVEL>.
+SYSMESSAGEUA 063,,,,Your Level 等级 changed to <EVAL <LEVEL> + <ARGN1>>.
 
 [eof]
