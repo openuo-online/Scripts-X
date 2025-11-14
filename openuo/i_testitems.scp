@@ -16,19 +16,18 @@ FLIP=1
 ARMOR=30
 VALUE=1000
 WEIGHT=2.0
-COLOR=05e5
 CATEGORY=Test Items
 SUBSECTION=Special Armor
 DESCRIPTION=Training Gloves (Auto Healing)
 CanUse=can_u_human|can_u_elf
 ReqStr=30
-ATTR=attr_magic|attr_newbie
 TEVENTS=ei_equipitem
 
 ON=@Create
    // 设置极高的耐久度，永不损坏
    HITPOINTS=9999
    MAXHITS=9999
+   ATTR=attr_magic|attr_newbie
    COLOR=05e5
    RESCOLD=2
    RESENERGY=2
