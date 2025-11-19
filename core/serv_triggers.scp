@@ -148,6 +148,12 @@ f_onserver_connection_acquired
 
 [FUNCTION f_onserver_start]
 // This function is called on server startup.
+DB.CONNECT
+IF (<DB.CONNECTED>)
+    SERV.LOG MySQL debug: MySQL successfully connected!
+ELSE
+    SERV.LOG MySQL debug: MySQL not connected!
+ENDIF
 
 SERV.ServIP=openuo.online	//Add your public IP here (not domain) if you are behind a router
 f_DTL_mdb_update 		// Load into MDB (in-memory database) the database file used for the loot dynamic templates
@@ -155,6 +161,10 @@ f_DTL_mdb_update 		// Load into MDB (in-memory database) the database file used 
 
 [FUNCTION f_onserver_exit]
 // This function is called on server shutdown.
+IF (<DB.CONNECTED>)
+    DB.CLOSE
+    SERV.LOG MySQL debug: MySQL successfully closed!
+ENDIF
 
 
 [FUNCTION f_onserver_save]
