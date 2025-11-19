@@ -24,4 +24,10 @@ SYSMESSAGEUA 88,,,,Your Exp 经验值 added <ARGN1>.
 ON=@ExpLevelChange
 SYSMESSAGEUA 88,,,,Your Level 等级 changed to <EVAL <LEVEL> + <ARGN1>>.
 
+ON=@Hit
+LOCAL.ITEMDAMAGECHANCE=5    //多少概率掉武器耐久
+
+ON=@GetHit
+LOCAL.ITEMDAMAGECHANCE=5    //多少概率掉盔甲、盾耐久
+
 [eof]
