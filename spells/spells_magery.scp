@@ -917,6 +917,9 @@ INTERRUPT=100.0,100.0
 ON=@Success
    LOCAL.AREARADIUS=2
 ON=@Effect
+   IF (<UID> == <SRC>)
+      RETURN 1
+   ENDIF
    LOCAL.DAMAGETYPE=(<DEF.dam_energy>|<DEF.dam_magic>)
 
 [SPELL 50]
