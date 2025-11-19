@@ -202,6 +202,27 @@ ENDIF
 
 [FUNCTION f_onserver_timer]
 // This function is called periodically at every X minutes (value is defined on TimerCall setting of sphere.ini).
+// IF (<DB.CONNECTED>)
+//     //账号注册
+//     DB.QUERY "select account, password, status from t_account where status = 0"
+//     // serv.log rows: <DB.ROW.NUMROWS> cols: <DB.ROW.NUMCOLS>
+//     serv.log Find <DB.ROW.NUMROWS> accounts to register.
+//     IF (<DB.ROW.NUMROWS>)
+//         FOR <DB.ROW.NUMROWS>
+//             LOCAL.rnb = <DLOCAL._FOR> - 1
+//             LOCAL.account = "<DB.ROW.<DLOCAL.rnb>.0>"
+//             LOCAL.password = "<DB.ROW.<DLOCAL.rnb>.1>"
+//             serv.log Starting register account: <LOCAL.account>
+//             serv.account add <LOCAL.account> <LOCAL.password>
+//             if (<serv.account.<LOCAL.account>>)
+//                 serv.log Register account: <LOCAL.account> successfully
+//                 DB.EXECUTE "UPDATE t_account SET status = 1 WHERE account = '<LOCAL.account>'"
+//             else
+//                 serv.log Register account: <LOCAL.account> failed
+//             endif
+//         ENDFOR
+//     ENDIF
+// ENDIF
 
 [FUNCTION f_onserver_connectreq_ex]
 //called after an IP exceeds MaxConnectRequestsPerIP
