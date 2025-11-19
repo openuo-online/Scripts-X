@@ -1,0 +1,20 @@
+//****************************************************************************
+// Global item events - custom modifications
+//****************************************************************************
+
+[EVENTS e_item_global]
+
+// 拦截物品损坏事件，阻止耐久度降低
+ON=@Damage
+    // 返回 1 阻止耐久度损耗
+    SERV.LOG Item <NAME> (@Damage triggered, blocking durability loss)
+    RETURN 1
+
+// 测试事件是否生效
+ON=@DClick
+    SERV.LOG Item <NAME> was double-clicked (baseid=<BASEID>)
+
+// 你可以在这里添加其他全局物品事件
+// 例如: @Create, @Equip, @UnEquip, @DropOn_Item 等
+
+[EOF]
