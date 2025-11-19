@@ -23,10 +23,10 @@ VALUES=1,10,80
 RANGE=2
 
 ON=@PreStart
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't mine while riding.
-		return 1
-	ENDIF
+	// IF (<SRC.FINDLAYER.layer_horse>)
+	// 	SRC.SYSMESSAGE You can't mine while riding.
+	// 	return 1
+	// ENDIF
 	IF (<SRC.WEAPON.USESCUR>< 1)
 		SRC.SYSMESSAGE The tool is out of charges.
 		return 1
@@ -46,10 +46,10 @@ ON=@Abort
 	SRC.SYSMESSAGE You decide not to mine for now.
 
 ON=@Stroke
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't mine while riding.
-		return 1
-	ENDIF
+	// IF (<SRC.FINDLAYER.layer_horse>)
+	// 	SRC.SYSMESSAGE You can't mine while riding.
+	// 	return 1
+	// ENDIF
 	IF ( <SERV.EXPERIMENTAL>&00002000)		// EF_DamageTools
 		IF (<SRC.WEAPON.HITS> > 0)
 			SRC.WEAPON.DAMAGE <eval <maxhits>*2>,DAM_PHYSICAL,<SRC>	// 2 of 16 chances to receive damage.

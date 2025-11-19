@@ -23,10 +23,10 @@ VALUES=1,30,200
 RANGE=4
 
 ON=@PreStart
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't fish while riding!
-		return 1
-	ENDIF
+	// IF (<SRC.FINDLAYER.layer_horse>)
+	// 	SRC.SYSMESSAGE You can't fish while riding!
+	// 	return 1
+	// ENDIF
 
 ON=@Start
 	ANIM 12
@@ -44,10 +44,10 @@ ON=@Abort
 	SRC.SYSMESSAGE You pull your line back in and stop fishing.
 
 ON=@Stroke
-	IF (<SRC.FINDLAYER.layer_horse>)
-		SRC.SYSMESSAGE You can't fish while riding!
-		return 1
-	ENDIF
+	// IF (<SRC.FINDLAYER.layer_horse>)
+	// 	SRC.SYSMESSAGE You can't fish while riding!
+	// 	return 1
+	// ENDIF
 	// Damage for Fishing Poles was never active, I add it here anyway.
 	//IF ( <SERV.EXPERIMENTAL>&00002000)		// EF_DamageTools
 	//	IF (<SRC.FINDLAYER.2.HITS> > 0)
