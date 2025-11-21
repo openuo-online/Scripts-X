@@ -85,3 +85,94 @@ if (<isinparty>)
     endif
 endif
 return 0
+
+//===========================================================================
+// 测试物品 - 治疗踏板（站上去每秒回血50点）
+//===========================================================================
+
+[ITEMDEF i_test_healing_plate]
+ID=i_floor_stone
+NAME=Healing Plate
+TYPE=t_normal
+WEIGHT=255.0
+VALUE=1000
+CATEGORY=Test Items
+SUBSECTION=Special Items
+DESCRIPTION=Healing Plate (Restores 50 HP per second)
+
+ON=@Create
+   // 设置为不可移动的地板物品
+   ATTR=attr_static|attr_move_never
+   COLOR=0x0490
+   MOREP=<P>
+
+ON=@Step
+   // 当角色踩上踏板时触发
+   IF (<SRC.ISCHAR>)
+      // 如果不是满血状态，恢复50点生命值
+      IF (<SRC.HITS> < <SRC.MAXHITS>)
+         LOCAL.HEAL=50
+         // 确保不会超过最大生命值
+         IF (<EVAL <SRC.HITS> + <LOCAL.HEAL>> > <SRC.MAXHITS>)
+            SRC.HITS=<SRC.MAXHITS>
+         ELSE
+            SRC.HITS += <LOCAL.HEAL>
+         ENDIF
+         // 显示治疗效果
+         SRC.EFFECT 3,i_fx_heal_effect,6,15,1
+         SRC.SYSMESSAGE @0x0058 你感受到治疗能量的涌入... (+<dLOCAL.HEAL> HP)
+      ENDIF
+   ENDIF
+   RETURN 0
+/
+/===========================================================================
+// 测试NPC - 训练假人（受到伤害固定为1点）
+//===========================================================================
+
+[CHARDEF c_test_training_dummy]
+ID=c_man
+NAME=Training Dummy
+FOODTYPE=0
+CATEGORY=Test NPCs
+SUBSECTION=Training
+DESCRIPTION=Training Dummy (Takes only 1 damage)
+
+ON=@Create
+   // 设置属性
+   STR=100
+   DEX=100
+   INT=100
+   MAXHITS=9999
+   HITS=9999
+   MAXSTAM=100
+   STAM=100
+   MAXMANA=100
+   MANA=100
+   // 设置为会主动攻击的怪物
+   NPC=brain_monster
+   // 设置攻击伤害为1点
+   DAM=1,1
+   // 设置战斗技能
+   WRESTLING=50.0
+   TACTICS=50.0
+   MAGICRESISTANCE=50.0
+
+ON=@GetHit
+   // 拦截所有伤害，固定为1点
+   ARGN1=1
+   // 检查血量，如果低于100点就恢复满血
+   IF (<EVAL <HITS> - 1> < 100)
+      HITS=<MAXHITS>
+      EFFECT 3,i_fx_heal_effect,6,15,1
+      EMOTE 恢复了全部生命值！
+   ENDIF
+   // 反击攻击者
+   IF (!<UID.<SRC.UID>.ISGM>)
+      ATTACK <SRC>
+   ENDIF
+   RETURN 0
+
+ON=@Hit
+   // 被攻击时显示消息
+   SRC.SYSMESSAGE @0x0026 训练假人受到了 1 点伤害！
+   RETURN 0

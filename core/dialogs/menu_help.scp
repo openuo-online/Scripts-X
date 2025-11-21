@@ -8,53 +8,53 @@ VERSION=X1
 
 [FUNCTION HelpPage]
 // HelpPage is executed whenever someone presses the "HelpPage" button
-MENU MENU_PAGEGM
+DIALOG d_help_main
 
 [MENU MENU_PAGEGM] // PAGEGM is executed whenever someone presses the "Page GM" button
-OpenUO Main Support Menu
+OpenUO 主帮助菜单
 
-ON=0 PAGE A GM: Sends a notice to the server administrators, if they are online. They can help you with almost all your in-game problems.
+ON=0 呼叫GM：向在线的服务器管理员发送通知。他们可以帮助你解决几乎所有游戏内的问题。
 MENU MENU_PAGEGM_3
 
-ON=0 WEB MENU: Provides a list of links to various websites.
+ON=0 网站菜单：提供各种网站链接列表。
 MENU MENU_PAGEGM_2
 
-ON=0 INFO: Shows the version of SPHERE this server is running.
+ON=0 版本信息：显示此服务器运行的SPHERE版本。
 VERSION
 
-ON=0 SERVER STATUS: Shows some status information about this server.
+ON=0 服务器状态：显示此服务器的一些状态信息。
 INFORMATION
 
-ON=0 GO TO THE HELP ROOM: This will teleport you to the Help Desk of Hell.
+ON=0 前往帮助室：将你传送到帮助服务台。
 MENU MENU_PAGEGM_4
 
 [MENU MENU_PAGEGM_2]
-Web Menu
-ON=0 OpenUO HOMEPAGE: Redirects you to the official OpenUO homepage.
+网站菜单
+ON=0 OpenUO 官方网站：跳转到OpenUO官方主页。
 WEBLINK https:\\openuo.online
 
 [MENU MENU_PAGEGM_3]
-GM Page Menu
-ON=0 STUCK: Use this option if you cant move and need GM assistance.
-GMPAGE Stuck
-ON=0 ITEM PROBLEM: Use this if you have run into a problem with a specific item.
-GMPAGE Item Problem
-ON=0 BUG: Use this if you have found a bug that you would like to report to the GMs.
-GMPAGE Bug Report
-ON=0 INFO: Use this if you need helping information about some part of the game.
-GMPAGE Information
-ON=0 OTHER: Use this for anything not listed above.
-GMPAGE Other
+GM呼叫菜单
+ON=0 卡住了：如果你无法移动并需要GM协助，请使用此选项。
+GMPAGE 卡住了
+ON=0 物品问题：如果你遇到特定物品的问题，请使用此选项。
+GMPAGE 物品问题
+ON=0 BUG报告：如果你发现了想要向GM报告的BUG，请使用此选项。
+GMPAGE BUG报告
+ON=0 信息咨询：如果你需要关于游戏某部分的帮助信息，请使用此选项。
+GMPAGE 信息咨询
+ON=0 其他：用于上述未列出的任何问题。
+GMPAGE 其他
 
 [MENU MENU_PAGEGM_4]
-Are you sure you want to be teleported to the Depths of Development? You will be stuck there until a GM teleports you back to the world.
-ON=0 YES, down we go!
+你确定要传送到帮助室吗？你将被困在那里，直到GM将你传送回世界。
+ON=0 是的，传送我过去！
 //GOPLACE a_helpdesk
 SERV.NEWITEM i_pagegm_teleport_delay
 NEW.EQUIP
 
-ON=0 NO, I'd rather stay here.
-SYSMESSAGE Help request aborted.
+ON=0 不，我想留在这里。
+SYSMESSAGE 帮助请求已取消。
 
 [ITEMDEF i_pagegm_teleport_delay]
 NAME=GM Page Delay Teleport
@@ -87,5 +87,126 @@ ON=@Timer
 	remove
 	return 1
 
+
+//===========================================================================
+// 中文帮助对话框系统
+//===========================================================================
+
+[DIALOG d_help_main]
+50, 50
+resizepic 0 0 9200 400 350
+dtext 130 20 2100 主帮助菜单
+dtext 50 60 0 请选择你需要的帮助类型：
+button 50 100 4005 4007 0 0 1
+dtext 85 102 0 呼叫GM
+button 50 130 4005 4007 0 0 2
+dtext 85 132 0 网站链接
+button 50 160 4005 4007 0 0 3
+dtext 85 162 0 版本信息
+button 50 190 4005 4007 0 0 4
+dtext 85 192 0 服务器状态
+button 50 220 4005 4007 0 0 5
+dtext 85 222 0 前往帮助室
+button 50 280 4005 4007 1 0 0
+dtext 85 282 0 关闭
+
+[DIALOG d_help_main BUTTON]
+ON=0
+RETURN 1
+
+ON=1
+DIALOG d_help_gmpage
+
+ON=2
+DIALOG d_help_web
+
+ON=3
+VERSION
+
+ON=4
+INFORMATION
+
+ON=5
+DIALOG d_help_teleport
+
+[DIALOG d_help_gmpage]
+50, 50
+resizepic 0 0 9200 400 380
+dtext 120 20 2100 GM呼叫菜单
+dtext 50 60 0 请选择问题类型：
+button 50 100 4005 4007 0 0 1
+dtext 85 102 0 卡住了 - 无法移动需要协助
+button 50 130 4005 4007 0 0 2
+dtext 85 132 0 物品问题 - 遇到物品相关问题
+button 50 160 4005 4007 0 0 3
+dtext 85 162 0 BUG报告 - 发现游戏BUG
+button 50 190 4005 4007 0 0 4
+dtext 85 192 0 信息咨询 - 需要游戏帮助信息
+button 50 220 4005 4007 0 0 5
+dtext 85 222 0 其他 - 上述未列出的问题
+button 50 280 4005 4007 0 0 0
+dtext 85 282 0 返回
+
+[DIALOG d_help_gmpage BUTTON]
+ON=0
+DIALOG d_help_main
+
+ON=1
+GMPAGE 卡住了
+SYSMESSAGE 已发送GM呼叫：卡住了
+
+ON=2
+GMPAGE 物品问题
+SYSMESSAGE 已发送GM呼叫：物品问题
+
+ON=3
+GMPAGE BUG报告
+SYSMESSAGE 已发送GM呼叫：BUG报告
+
+ON=4
+GMPAGE 信息咨询
+SYSMESSAGE 已发送GM呼叫：信息咨询
+
+ON=5
+GMPAGE 其他
+SYSMESSAGE 已发送GM呼叫：其他
+
+[DIALOG d_help_web]
+50, 50
+resizepic 0 0 9200 400 200
+dtext 140 20 2100 网站菜单
+dtext 50 60 0 选择要访问的网站：
+button 50 100 4005 4007 0 0 1
+dtext 85 102 0 OpenUO 官方网站
+button 50 150 4005 4007 0 0 0
+dtext 85 152 0 返回
+
+[DIALOG d_help_web BUTTON]
+ON=0
+DIALOG d_help_main
+
+ON=1
+WEBLINK https:\\openuo.online
+SYSMESSAGE 正在打开网站...
+
+[DIALOG d_help_teleport]
+50, 50
+resizepic 0 0 9200 400 250
+dtext 110 20 2100 传送到帮助室
+dtext 50 60 0 你确定要传送到帮助室吗？
+dtext 50 90 0 你将被困在那里，直到GM将你传送回世界。
+button 80 150 4005 4007 0 0 1
+dtext 115 152 0 是的，传送我过去！
+button 80 180 4005 4007 0 0 0
+dtext 115 182 0 不，我想留在这里
+
+[DIALOG d_help_teleport BUTTON]
+ON=0
+DIALOG d_help_main
+
+ON=1
+SERV.NEWITEM i_pagegm_teleport_delay
+NEW.EQUIP
+SYSMESSAGE 准备传送...
 
 [EOF]
