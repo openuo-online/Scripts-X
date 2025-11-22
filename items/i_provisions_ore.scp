@@ -41,6 +41,7 @@ color_o_valorite   0515
 DEFNAME=i_ore_iron
 NAME=Iron Ore
 TYPE=t_ore
+PILE=1
 SKILLMAKE=mining 0.0
 TDATA1=i_ingot_iron
 WEIGHT=2
