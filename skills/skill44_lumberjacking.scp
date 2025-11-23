@@ -22,16 +22,16 @@ VALUES=1,10,50
 RANGE=2
 
 ON=@PreStart
-	IF (<SRC.WEAPON.USESCUR>< 1)
-		SRC.SYSMESSAGE The tool is out of charges.
-		return 1
-	ENDIF
+	// IF (<SRC.WEAPON.USESCUR>< 1)
+	// 	SRC.SYSMESSAGE The tool is out of charges.
+	// 	return 1
+	// ENDIF
 
 ON=@Success
-	SRC.WEAPON.USESCUR --
-	IF (<SRC.WEAPON.USESCUR>==0)
-		SRC.WEAPON.DESTROY 1
-	ENDIF
+	// SRC.WEAPON.USESCUR --
+	// IF (<SRC.WEAPON.USESCUR>==0)
+	// 	SRC.WEAPON.DESTROY 1
+	// ENDIF
 
 	
 ON=@Fail
