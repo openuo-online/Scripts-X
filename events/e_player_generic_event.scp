@@ -11,6 +11,9 @@ ON=@Login
     SAYUA 052,,,,Welcome to OpenUO, a completely free world. Just enjoy and have fun!
     //ACCOUNT.LANG=CHT
     //RETURN 0
+    TAG.SKILLGAIN_BONUS_HOURS=12
+    TAG.SKILLGAIN_BONUS_MULTIPLIER=2
+    SYSMESSAGEUA ,,,,测试开发期，获得双倍练功。
 
 ON=@AfterClick
 if (<LEVEL> > 0) && (<EXP> > 0)
