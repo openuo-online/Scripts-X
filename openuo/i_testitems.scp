@@ -47,7 +47,7 @@ ON=@UnEquip
 
 ON=@DClick
    // 双击时调用 f_checkbonus 函数
-   SRC.f_checkbonus
+   // SRC.f_checkbonus
    RETURN 0
 
 ON=@Timer
@@ -91,7 +91,7 @@ return 0
 //===========================================================================
 
 [ITEMDEF i_test_healing_plate]
-ID=i_floor_stone
+ID=i_floor_stone_red
 NAME=Healing Plate
 TYPE=t_normal
 WEIGHT=255.0
@@ -103,7 +103,7 @@ DESCRIPTION=Healing Plate (Restores 50 HP per second)
 ON=@Create
    // 设置为不可移动的地板物品
    ATTR=attr_static|attr_move_never
-   COLOR=0x0490
+   COLOR=049
    MOREP=<P>
 
 ON=@Step
@@ -111,7 +111,7 @@ ON=@Step
    IF (<SRC.ISCHAR>)
       // 如果不是满血状态，恢复50点生命值
       IF (<SRC.HITS> < <SRC.MAXHITS>)
-         LOCAL.HEAL=50
+         LOCAL.HEAL=30
          // 确保不会超过最大生命值
          IF (<EVAL <SRC.HITS> + <LOCAL.HEAL>> > <SRC.MAXHITS>)
             SRC.HITS=<SRC.MAXHITS>
@@ -120,7 +120,6 @@ ON=@Step
          ENDIF
          // 显示治疗效果
          SRC.EFFECT 3,i_fx_heal_effect,6,15,1
-         SRC.SYSMESSAGE @0x0058 你感受到治疗能量的涌入... (+<dLOCAL.HEAL> HP)
       ENDIF
    ENDIF
    RETURN 0
@@ -133,6 +132,9 @@ ON=@Step
 ID=c_man
 NAME=Training Dummy
 FOODTYPE=0
+CAN=mt_nonmover
+DAM=4,10
+ARMOR=20
 CATEGORY=Test NPCs
 SUBSECTION=Training
 DESCRIPTION=Training Dummy (Takes only 1 damage)
@@ -153,9 +155,11 @@ ON=@Create
    // 设置攻击伤害为1点
    DAM=1,1
    // 设置战斗技能
-   WRESTLING=50.0
-   TACTICS=50.0
+   WRESTLING=80.0
+   TACTICS=80.0
    MAGICRESISTANCE=50.0
+   // 设置移动速度（0=不动，数值越大移动越快）
+   // MOVERATE=0
 
 ON=@GetHit
    // 拦截所有伤害，固定为1点
@@ -164,7 +168,6 @@ ON=@GetHit
    IF (<EVAL <HITS> - 1> < 100)
       HITS=<MAXHITS>
       EFFECT 3,i_fx_heal_effect,6,15,1
-      EMOTE 恢复了全部生命值！
    ENDIF
    // 反击攻击者
    IF (!<UID.<SRC.UID>.ISGM>)
@@ -174,5 +177,5 @@ ON=@GetHit
 
 ON=@Hit
    // 被攻击时显示消息
-   SRC.SYSMESSAGE @0x0026 训练假人受到了 1 点伤害！
+
    RETURN 0

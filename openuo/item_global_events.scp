@@ -13,7 +13,7 @@
 
 // 测试事件是否生效
 // ON=@DClick
-//     SERV.LOG Item <NAME> was double-clicked (baseid=<BASEID>) by <SRC.NAME>
+//     src.sayu Item <NAME> was double-clicked (baseid=<BASEID>) by <SRC.NAME>
 
 // 你可以在这里添加其他全局物品事件
 // 例如: @Create, @Equip, @UnEquip, @DropOn_Item 等
