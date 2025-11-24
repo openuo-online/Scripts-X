@@ -31,7 +31,7 @@ MENU MENU_PAGEGM_4
 [MENU MENU_PAGEGM_2]
 网站菜单
 ON=0 OpenUO 官方网站：跳转到OpenUO官方主页。
-WEBLINK https:\\openuo.online
+WEBLINK openuo.online
 
 [MENU MENU_PAGEGM_3]
 GM呼叫菜单
@@ -54,7 +54,7 @@ SERV.NEWITEM i_pagegm_teleport_delay
 NEW.EQUIP
 
 ON=0 不，我想留在这里。
-SYSMESSAGEUA @color_text,,,, 帮助请求已取消。
+SYSMESSAGEUA color_text,,,, 帮助请求已取消。
 
 [ITEMDEF i_pagegm_teleport_delay]
 NAME=GM Page Delay Teleport
@@ -155,23 +155,23 @@ DIALOG d_help_main
 
 ON=1
 GMPAGE 卡住了
-SYSMESSAGEUA @color_text,,,, 已发送GM呼叫：卡住了
+SYSMESSAGEUA color_text,,,, 已发送GM呼叫：卡住了
 
 ON=2
 GMPAGE 物品问题
-SYSMESSAGEUA @color_text,,,, 已发送GM呼叫：物品问题
+SYSMESSAGEUA color_text,,,, 已发送GM呼叫：物品问题
 
 ON=3
 GMPAGE BUG报告
-SYSMESSAGEUA @color_text,,,, 已发送GM呼叫：BUG报告
+SYSMESSAGEUA color_text,,,, 已发送GM呼叫：BUG报告
 
 ON=4
 GMPAGE 信息咨询
-SYSMESSAGEUA @color_text,,,, 已发送GM呼叫：信息咨询
+SYSMESSAGEUA color_text,,,, 已发送GM呼叫：信息咨询
 
 ON=5
 GMPAGE 其他
-SYSMESSAGEUA @color_text,,,, 已发送GM呼叫：其他
+SYSMESSAGEUA color_text,,,, 已发送GM呼叫：其他
 
 [DIALOG d_help_web]
 50, 50
@@ -188,8 +188,8 @@ ON=0
 DIALOG d_help_main
 
 ON=1
-WEBLINK https:\\openuo.online
-SYSMESSAGEUA @color_text,,,, 正在打开网站...
+WEBLINK openuo.online
+SYSMESSAGEUA color_text,,,, 正在打开网站...
 
 [DIALOG d_help_teleport]
 50, 50
@@ -209,6 +209,6 @@ DIALOG d_help_main
 ON=1
 SERV.NEWITEM i_pagegm_teleport_delay
 NEW.EQUIP
-SYSMESSAGEUA @color_text,,,, 准备传送...
+SYSMESSAGEUA color_text,,,, 准备传送...
 
 [EOF]
