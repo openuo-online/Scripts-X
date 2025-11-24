@@ -104,12 +104,10 @@ ON=@Create
    // 设置为不可移动的地板物品
    ATTR=attr_static|attr_move_never
    COLOR=049
-   MOREP=<P>
-
 ON=@Step
    // 当角色踩上踏板时触发
-   IF (<SRC.ISCHAR>)
-      // 如果不是满血状态，恢复50点生命值
+   IF (<SRC.ISPLAYER>)
+      // 如果不是满血状态，恢复30点生命值
       IF (<SRC.HITS> < <SRC.MAXHITS>)
          LOCAL.HEAL=30
          // 确保不会超过最大生命值
@@ -165,9 +163,9 @@ ON=@GetHit
    // 拦截所有伤害，固定为1点
    ARGN1=1
    // 检查血量，如果低于100点就恢复满血
-   IF (<EVAL <HITS> - 1> < 100)
+   IF (<HITS> < <MAXHITS>)
       HITS=<MAXHITS>
-      EFFECT 3,i_fx_heal_effect,6,15,1
+      // EFFECT 3,i_fx_heal_effect,6,15,1
    ENDIF
    // 反击攻击者
    IF (!<UID.<SRC.UID>.ISGM>)
@@ -179,3 +177,41 @@ ON=@Hit
    // 被攻击时显示消息
 
    RETURN 0
+
+[ITEMDEF i_bow_elven]
+//Elven Bow
+ID=i_bow
+NAME=Elven Bow
+DAM=19,24
+SPEED=35
+SKILL=Archery
+REQSTR=80
+RANGE=0,11
+VALUE=1000
+RESOURCES=100 i_log,100 i_ingot_iron
+SKILLMAKE=Bowcraft 80
+CATEGORY=Custom
+SUBSECTION=WEAPON
+DESCRIPTION=Elven Bow
+ON=@Create
+    COLOR=0237
+    HITPOINTS={5500 6500}
+ON=@Equip
+    SRC.ARCHERY = <SRC.ARCHERY> + 10.0
+    SRC.EVENTS +e_elven_bow
+ON=@Unequip
+    SRC.ARCHERY = <SRC.ARCHERY> - 10.0
+    SRC.EVENTS -e_elven_bow
+
+[EVENTS e_elven_bow]
+ON=@Hit
+IF (<ARGO>)
+    REF1 = <ARGO>
+    IF (<R10> < 1)
+        // SAYU ***精 灵 祝 福***
+        ARGN1 = <ARGN1> * 2
+        SRC.EFFECT 3,i_fx_glow_spike,1,16,0
+   ELIF (<R10> < 3)
+      SRC.SPELLEFFECT s_harm,100.0,<UID>
+   ENDIF
+ENDIF
