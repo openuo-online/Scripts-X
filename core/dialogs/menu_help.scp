@@ -121,12 +121,13 @@ ON=2
 DIALOG d_help_web
 
 ON=3
-SERV.VERSION
-DIALOG d_help_main
+SAYUA color_cyan,,,,念念不忘，必有回响
+// SERV.VERSION
+// DIALOG d_help_main
 
 ON=4
 SERV.INFORMATION
-DIALOG d_help_main
+// DIALOG d_help_main
 
 ON=5
 DIALOG d_help_teleport
