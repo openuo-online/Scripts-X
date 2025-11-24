@@ -121,7 +121,7 @@ ON=2
 DIALOG d_help_web
 
 ON=3
-SAYUA color_cyan,,,,念念不忘，必有回响
+MESSAGEUA color_cyan,,,,念念不忘，必有回响
 // SERV.VERSION
 // DIALOG d_help_main
 
