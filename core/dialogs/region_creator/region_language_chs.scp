@@ -1,0 +1,44 @@
+//***********************************************************************************
+// SphereServer by: SphereServer development team and Menasoft.
+// www.sphereServer.net
+//***********************************************************************************
+// Save in UTF8 encoding
+//***********************************************************************************
+// Eranova
+// Multilanguage Region Creator
+// Created by Reflex. https://forum.spherecommunity.net/sshare.php?srt=1&uid=686
+// Reworked for a multilingual system  Golfin
+// Translated to Simplified Chinese
+//***********************************************************************************
+VERSION=X1
+
+[DEFNAME defs_d_Region_Record_Language_CHS]
+d_Region_CHS_Region_Record				"区域创建器"
+d_Region_CHS_Region_Record_Notice			"区域创建器 - 注意事项"
+d_Region_CHS_Region_Record_Events			"默认使用事件和标志。"
+d_Region_CHS_Region_Record_Flags			"选择并删除你不需要的。"
+d_Region_CHS_Region_Record_File1			"在maps文件夹中，创建的数据保存在"
+d_Region_CHS_Region_Record_File2			"map_region_record.scp文件中。将创建的区域复制到"
+d_Region_CHS_Region_Record_File3			"相应的地图文件并保存。你需要重启"
+d_Region_CHS_Region_Record_File4			"服务器以在分片上激活！"
+d_Region_CHS_Top_Left					"左上角："
+d_Region_CHS_Bottom_Right				"右下角："
+d_Region_CHS_Area_Name					"区域名称："
+d_Region_CHS_Name					"名称："
+d_Region_CHS_Area_Group					"组："
+d_Region_CHS_Area_P					"坐标："
+d_Region_CHS_Create					"创建区域"
+d_Region_CHS_Target_TopLeft				"瞄准区域的左上角位置。"
+d_Region_CHS_Target_BottomRight				"瞄准区域的右下角位置。"
+d_Region_CHS_Type_Area_Name				"输入区域的Area名称（不能有空格或特殊字符！）。"
+d_Region_CHS_Type_Name					"输入区域的名称。"
+d_Region_CHS_Type_Group					"输入组的名称。"
+d_Region_CHS_Target_P					"瞄准你想要的P坐标位置。"
+d_Region_CHS_Enter_Name					"你必须输入区域名称！"
+d_Region_CHS_Enter_Group				"你必须输入组名称！"
+d_Region_CHS_No_Space					"区域名称不能包含空格！"
+d_Region_CHS_No_Numbers					"区域名称不能只包含数字，还需要添加文字名称！"
+d_Region_CHS_Used					"此区域名称已被使用！"
+d_Region_CHS_Sys_Create					"区域已保存到文件 /scripts/maps/sphere_map_region_record.scp..."
+
+[Eof]

@@ -6,7 +6,7 @@
 //***********************************************************************************
 // Multilanguage Region Creator
 // Created by Reflex. https://forum.spherecommunity.net/sshare.php?srt=1&uid=686
-// © 11/2024 Reworked for a multilingual system  Golfin
+// ï¿½ 11/2024 Reworked for a multilingual system  Golfin
 //***********************************************************************************
 VERSION=X1
 
@@ -28,6 +28,8 @@ Elif (!strcmp(<Account.Lang>,TRK))
    Local.Lang=<Account.Lang> 
 Elif (!strcmp(<Account.Lang>,ESP))
    Local.Lang=<Account.Lang>
+Elif (!strcmp(<Account.Lang>,CHS)) || (!strcmp(<Account.Lang>,CHT))
+   Local.Lang=CHS
 Else //All other langage
    Local.Lang=ENG 
 Endif
