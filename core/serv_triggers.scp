@@ -155,7 +155,7 @@ ELSE
     SERV.LOG MySQL debug: MySQL not connected!
 ENDIF
 
-SERV.ServIP=openuo.online	//Add your public IP here (not domain) if you are behind a router
+SERV.ServIP=49.235.157.104	//Add your public IP here (not domain) if you are behind a router
 f_DTL_mdb_update 		// Load into MDB (in-memory database) the database file used for the loot dynamic templates
 
 
