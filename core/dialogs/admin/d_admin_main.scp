@@ -35,6 +35,8 @@ Elif (!strcmp(<Account.Lang>,TRK))
    Local.Lang=<Account.Lang> 
 Elif (!strcmp(<Account.Lang>,ESP)) || (!strcmp(<Account.Lang>,ESN))
    Local.Lang=ESP
+Elif (!strcmp(<Account.Lang>,CHS)) || (!strcmp(<Account.Lang>,CHT))
+   Local.Lang=CHS
 Else //All other langage
    Local.Lang=ENG 
 Endif
