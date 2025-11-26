@@ -19,20 +19,25 @@ BONUS_STATS=25
 ADV_RATE=10.0,200.0,800.0
 
 ON=@PreStart
-	IF !(<FLAGS> & statf_invisible|statf_hidden)
-		SYSMESSAGE You must hide first
-		return 1
-	ELIF (<HIDING> < 80.0)
-		SYSMESSAGE You are not hidden well enough.  Become better at hiding.
+	// IF !(<FLAGS> & statf_invisible|statf_hidden)
+	// 	SYSMESSAGE You must hide first
+	// 	return 1
+	// ELIF (<HIDING> < 80.0)
+	// 	SYSMESSAGE You are not hidden well enough.  Become better at hiding.
+	// 	REVEAL
+	// 	return 1
+	// ELIF (<GetCharArmorRating> >= 42)
+	// 	SYSMESSAGE You could not hope to move quietly wearing this much armor.
+	// 	REVEAL
+	// 	return 1
+	// ENDIF
+
+	IF (<FLAGS> & statf_invisible|statf_hidden)
 		REVEAL
-		return 1
-	ELIF (<GetCharArmorRating> >= 42)
-		SYSMESSAGE You could not hope to move quietly wearing this much armor.
-		REVEAL
-		return 1
 	ENDIF
 
 ON=@Success
+	FLAGS |= statf_hidden
 	STEPSTEALTH = <eval <STEALTH>/50>
 	SYSMESSAGE You begin to move quietly.
 
