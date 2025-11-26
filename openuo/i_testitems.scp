@@ -94,15 +94,8 @@ return 0
 ID=i_floor_stone_red
 NAME=Healing Plate
 TYPE=t_normal
-WEIGHT=255.0
-VALUE=1000
-CATEGORY=Test Items
-SUBSECTION=Special Items
-DESCRIPTION=Healing Plate (Restores 50 HP per second)
-
 ON=@Create
-   // 设置为不可移动的地板物品
-   ATTR=attr_static|attr_move_never
+   ATTR=attr_move_never
    COLOR=049
 ON=@Step
    // 当角色踩上踏板时触发
@@ -133,9 +126,6 @@ FOODTYPE=0
 CAN=mt_nonmover
 DAM=4,10
 ARMOR=20
-CATEGORY=Test NPCs
-SUBSECTION=Training
-DESCRIPTION=Training Dummy (Takes only 1 damage)
 
 ON=@Create
    // 设置属性
