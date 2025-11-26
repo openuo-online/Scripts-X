@@ -54,8 +54,9 @@ ON=@Timer
    // 每秒检测佩戴者的血量
    IF (<CONT.ISCHAR>)
       // 如果不是满血状态，立即恢复满血
-      IF (<CONT.HITS> < <CONT.MAXHITS>)
+      IF ((<CONT.HITS> < <CONT.MAXHITS>) || (<CONT.MANA> < <CONT.MAXMANA>))
          CONT.HITS=<CONT.MAXHITS>
+         CONT.MANA=<CONT.MAXMANA>
          // 可选：显示治疗效果
          CONT.EFFECT 3,i_fx_heal_effect,6,15,1
       ENDIF
