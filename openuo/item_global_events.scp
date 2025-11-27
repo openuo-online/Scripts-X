@@ -18,4 +18,9 @@
 // 你可以在这里添加其他全局物品事件
 // 例如: @Create, @Equip, @UnEquip, @DropOn_Item 等
 
+ON=@AfterClick
+IF (<HITS> > 0) && (<MAXHITS> > 0)
+    LOCAL.CLICKMSGTEXT .= " (<HITS>/<MAXHITS>)"
+endif
+
 [EOF]
