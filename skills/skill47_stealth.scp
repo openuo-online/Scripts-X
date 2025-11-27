@@ -37,7 +37,8 @@ ON=@PreStart
 	ENDIF
 
 ON=@Success
-	FLAGS |= statf_hidden
+	// FLAGS |= statf_hidden
+	SKILL 21
 	STEPSTEALTH = <eval <STEALTH>/50>
 	SYSMESSAGE You begin to move quietly.
 
