@@ -102,7 +102,7 @@ dtext 85 102 0 呼叫GM
 button 50 130 4005 4007 1 0 2
 dtext 85 132 0 网站链接
 button 50 160 4005 4007 1 0 3
-dtext 85 162 0 版本信息
+dtext 85 162 0 客户端信息
 button 50 190 4005 4007 1 0 4
 dtext 85 192 0 服务器状态
 button 50 220 4005 4007 1 0 5
@@ -121,9 +121,12 @@ ON=2
 DIALOG d_help_web
 
 ON=3
-MESSAGEUA color_cyan,,,,念念不忘，必有回响
+// MESSAGEUA color_cyan,,,,念念不忘，必有回响
 // SERV.VERSION
 // DIALOG d_help_main
+SYSMESSAGEUA color_none,,,, 语言: <ACCOUNT.LANG> 登录IP: <ACCOUNT.LASTIP>
+SYSMESSAGEUA color_none,,,, 声望: <FAME> 善恶: <KARMA> 杀人数: <KILLS>
+SYSMESSAGEUA color_none,,,, 经验: <EXP> 等级: <LEVEL> 头衔: <TITLE>
 
 ON=4
 SERV.INFORMATION
