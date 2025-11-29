@@ -374,7 +374,7 @@ HEIGHT=35
 RESOURCES=1 i_ribs_raw
 DESIRES=i_gold
 AVERSIONS=r_civilization
-FACTION = faction_demon
+FACTION_GROUP=faction_demon
 
 CATEGORY=Monsters
 SUBSECTION=Daemons
@@ -424,7 +424,7 @@ HEIGHT=35
 RESOURCES=1 i_ribs_raw,2 i_reag_daemon_bone
 DESIRES=r_caves,t_coin,t_gold,t_gem,t_wand,t_potion,t_scroll,t_reagent
 AVERSIONS=t_trap,r_civilization
-FACTION = faction_demon
+FACTION_GROUP=faction_demon
 
 CATEGORY=Monsters
 SUBSECTION=Daemons
