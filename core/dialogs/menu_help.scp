@@ -126,7 +126,7 @@ ON=3
 // DIALOG d_help_main
 SYSMESSAGEUA color_none,,,, 语言: <ACCOUNT.LANG> 登录IP: <ACCOUNT.LASTIP>
 SYSMESSAGEUA color_none,,,, 声望: <FAME> 善恶: <KARMA> 杀人数: <KILLS>
-SYSMESSAGEUA color_none,,,, 经验: <EXP> 等级: <LEVEL> 头衔: <TITLE>
+SYSMESSAGEUA color_none,,,, 经验: <EXP> 等级: <LEVEL> 食物: <FOOD>
 
 ON=4
 SERV.INFORMATION
