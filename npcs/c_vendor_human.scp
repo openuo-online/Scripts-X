@@ -6,7 +6,7 @@ VERSION=X1
 
 [CHARDEF c_vendor]
 ID=C_MAN
-NAME=#NAMES_HUMANMALE the Vendor
+NAME=#NAMES_HUMANMALE 商贩
 HIREDAYWAGE=50
 DESIRES=i_gold
 AVERSIONS=t_trap
@@ -46,7 +46,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vendor_f]
 ID=C_WOMAN
-NAME=#NAMES_HUMANFEMALE the Vendor
+NAME=#NAMES_HUMANFEMALE 商贩
 HIREDAYWAGE=50
 DESIRES=i_gold
 AVERSIONS=t_trap
@@ -84,7 +84,7 @@ ON=@NPCRestock
 
 [CHARDEF c_alchemist]
 ID=c_man
-NAME=#NAMES_HUMANMALE the alchemist
+NAME=#NAMES_HUMANMALE 炼金术士
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -144,7 +144,7 @@ ON=@NPCRestock
 
 [CHARDEF c_alchemist_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the alchemist
+NAME=#NAMES_HUMANFEMALE 炼金术士
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -203,7 +203,7 @@ ON=@NPCRestock
 
 [CHARDEF c_animaltrainer]
 ID=c_man
-NAME=#NAMES_HUMANMALE the animal trainer
+NAME=#NAMES_HUMANMALE 训兽师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -262,7 +262,7 @@ ON=@NPCRestock
 
 [CHARDEF c_animaltrainer_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the animal trainer
+NAME=#NAMES_HUMANFEMALE 训兽师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -320,7 +320,7 @@ ON=@NPCRestock
 
 [CHARDEF c_architect]
 ID=c_man
-NAME=#NAMES_HUMANMALE the architect
+NAME=#NAMES_HUMANMALE 建筑师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -378,7 +378,7 @@ ON=@NPCRestock
 
 [CHARDEF c_architect_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the architect
+NAME=#NAMES_HUMANFEMALE 建筑师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -434,7 +434,7 @@ ON=@NPCRestock
 
 [CHARDEF c_armorer]
 ID=c_man
-NAME=#NAMES_HUMANMALE the armorer
+NAME=#NAMES_HUMANMALE 护甲匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -502,7 +502,7 @@ ON=@NPCRestock
 
 [CHARDEF c_armorer_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the armorer
+NAME=#NAMES_HUMANFEMALE 护甲匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -569,7 +569,7 @@ ON=@NPCRestock
 
 [CHARDEF c_baker]
 ID=c_man
-NAME=#NAMES_HUMANMALE the baker
+NAME=#NAMES_HUMANMALE 面包师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -627,7 +627,7 @@ ON=@NPCRestock
 
 [CHARDEF c_baker_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the baker
+NAME=#NAMES_HUMANFEMALE 面包师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -684,7 +684,7 @@ ON=@NPCRestock
 
 [CHARDEF c_banker]
 ID=c_man
-NAME=#NAMES_HUMANMALE the banker
+NAME=#NAMES_HUMANMALE 银行家
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -739,7 +739,7 @@ ON=@Create
 
 [CHARDEF c_banker_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the banker
+NAME=#NAMES_HUMANFEMALE 银行家
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -793,7 +793,7 @@ ON=@Create
 
 [CHARDEF c_beekeeper]
 ID=c_man
-NAME=#NAMES_HUMANMALE the beekeeper
+NAME=#NAMES_HUMANMALE 养蜂人
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -854,7 +854,7 @@ ON=@NPCRestock
 
 [CHARDEF c_beekeeper_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the beekeeper
+NAME=#NAMES_HUMANFEMALE 养蜂人
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -914,7 +914,7 @@ ON=@NPCRestock
 
 [CHARDEF c_blacksmith]
 ID=c_man
-NAME=#NAMES_HUMANMALE the blacksmith
+NAME=#NAMES_HUMANMALE 铁匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -988,7 +988,7 @@ ON=@NPCRestock
 
 [CHARDEF c_blacksmith_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the blacksmith
+NAME=#NAMES_HUMANFEMALE 铁匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1061,7 +1061,7 @@ ON=@NPCRestock
 
 [CHARDEF c_body_sculptor]
 ID=c_man
-NAME=#NAMES_HUMANMALE the body sculptor
+NAME=#NAMES_HUMANMALE 体形雕塑师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1097,7 +1097,7 @@ ON=@Create
 
 [CHARDEF c_body_sculptor_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the body sculptor
+NAME=#NAMES_HUMANFEMALE 体形雕塑师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1132,7 +1132,7 @@ ON=@Create
 
 [CHARDEF c_bowyer]
 ID=c_man
-NAME=#NAMES_HUMANMALE the bowyer
+NAME=#NAMES_HUMANMALE 制弓匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1191,7 +1191,7 @@ ON=@NPCRestock
 
 [CHARDEF c_bowyer_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the bowyer
+NAME=#NAMES_HUMANFEMALE 制弓匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1249,7 +1249,7 @@ ON=@NPCRestock
 
 [CHARDEF c_butcher]
 ID=c_man
-NAME=#NAMES_HUMANMALE the butcher
+NAME=#NAMES_HUMANMALE 屠夫
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1311,7 +1311,7 @@ ON=@NPCRestock
 
 [CHARDEF c_butcher_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the butcher
+NAME=#NAMES_HUMANFEMALE 屠夫
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1372,7 +1372,7 @@ ON=@NPCRestock
 
 [CHARDEF c_carpenter]
 ID=c_man
-NAME=#NAMES_HUMANMALE the carpenter
+NAME=#NAMES_HUMANMALE 木匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1428,7 +1428,7 @@ ON=@NPCRestock
 
 [CHARDEF c_carpenter_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the carpenter
+NAME=#NAMES_HUMANFEMALE 木匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1483,7 +1483,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cashual]
 ID=c_man
-NAME=#NAMES_HUMANMALE the cashual
+NAME=#NAMES_HUMANMALE 便装者
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1540,7 +1540,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cashual_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the cashual
+NAME=#NAMES_HUMANFEMALE 便装者
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1596,7 +1596,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cobbler]
 ID=c_man
-NAME=#NAMES_HUMANMALE the cobbler
+NAME=#NAMES_HUMANMALE 鞋匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1649,7 +1649,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cobbler_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the cobbler
+NAME=#NAMES_HUMANFEMALE 鞋匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1703,7 +1703,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cook]
 ID=c_man
-NAME=#NAMES_HUMANMALE the cook
+NAME=#NAMES_HUMANMALE 厨师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1763,7 +1763,7 @@ ON=@NPCRestock
 
 [CHARDEF c_cook_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the cook
+NAME=#NAMES_HUMANFEMALE 厨师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1822,7 +1822,7 @@ ON=@NPCRestock
 
 [CHARDEF c_farmer]
 ID=c_man
-NAME=#NAMES_HUMANMALE the farmer
+NAME=#NAMES_HUMANMALE 农民
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1877,7 +1877,7 @@ ON=@NPCRestock
 
 [CHARDEF c_farmer_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the farmer
+NAME=#NAMES_HUMANFEMALE 农民
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1930,7 +1930,7 @@ ON=@NPCRestock
 
 [CHARDEF c_fisher]
 ID=c_man
-NAME=#NAMES_HUMANMALE the fisherman
+NAME=#NAMES_HUMANMALE 渔夫
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -1988,7 +1988,7 @@ ON=@NPCRestock
 
 [CHARDEF c_fisher_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the fisherwoman
+NAME=#NAMES_HUMANFEMALE 渔妇
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2045,7 +2045,7 @@ ON=@NPCRestock
 
 [CHARDEF c_furtrader]
 ID=c_man
-NAME=#NAMES_HUMANMALE the fur trader
+NAME=#NAMES_HUMANMALE 毛皮商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2106,7 +2106,7 @@ ON=@NPCRestock
 
 [CHARDEF c_furtrader_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the fur trader
+NAME=#NAMES_HUMANFEMALE 毛皮商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2166,7 +2166,7 @@ ON=@NPCRestock
 
 [CHARDEF c_glassblower]
 ID=c_MAN
-NAME=#NAMES_HUMANMALE the glassblower
+NAME=#NAMES_HUMANMALE 吹玻璃匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2221,7 +2221,7 @@ ON=@NPCRestock
 
 [CHARDEF c_glassblower_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the glassblower
+NAME=#NAMES_HUMANFEMALE 吹玻璃匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2280,7 +2280,7 @@ ON=@NPCRestock
 
 [CHARDEF c_hairstylist]
 ID=c_man
-NAME=#NAMES_HUMANMALE the hairstylist
+NAME=#NAMES_HUMANMALE 发型师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2316,7 +2316,7 @@ ON=@Create
 
 [CHARDEF c_hairstylist_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the hairstylist
+NAME=#NAMES_HUMANFEMALE 发型师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2351,7 +2351,7 @@ ON=@Create
 
 [CHARDEF c_healer]
 ID=c_man
-NAME=#NAMES_HUMANMALE the healer
+NAME=#NAMES_HUMANMALE 治疗师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2408,7 +2408,7 @@ ON=@NPCRestock
 
 [CHARDEF c_healer_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the healer
+NAME=#NAMES_HUMANFEMALE 治疗师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2464,7 +2464,7 @@ ON=@NPCRestock
 
 [CHARDEF c_herbalist]
 ID=c_man
-NAME=#NAMES_HUMANMALE the herbalist
+NAME=#NAMES_HUMANMALE 草药师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2539,7 +2539,7 @@ ON=@NPCRestock
 
 [CHARDEF c_herbalist_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the herbalist
+NAME=#NAMES_HUMANFEMALE 草药师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2610,7 +2610,7 @@ ON=@NPCRestock
 
 [CHARDEF c_innkeeper]
 ID=c_man
-NAME=#NAMES_HUMANMALE the innkeeper
+NAME=#NAMES_HUMANMALE 客栈老板
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2672,7 +2672,7 @@ ON=@NPCRestock
 
 [CHARDEF c_innkeeper_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the innkeeper
+NAME=#NAMES_HUMANFEMALE 客栈老板
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2733,7 +2733,7 @@ ON=@NPCRestock
 
 [CHARDEF c_jeweler]
 ID=c_man
-NAME=#NAMES_HUMANMALE the jeweler
+NAME=#NAMES_HUMANMALE 珠宝商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2793,7 +2793,7 @@ ON=@NPCRestock
 
 [CHARDEF c_jeweler_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the jeweler
+NAME=#NAMES_HUMANFEMALE 珠宝商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2852,7 +2852,7 @@ ON=@NPCRestock
 
 [CHARDEF c_lumberjack]
 ID=c_man
-NAME=#NAMES_HUMANMALE the lumberjack
+NAME=#NAMES_HUMANMALE 伐木工
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2921,7 +2921,7 @@ ON=@NPCRestock
 
 [CHARDEF c_lumberjack_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the lumberjack
+NAME=#NAMES_HUMANFEMALE 伐木工
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -2989,7 +2989,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mageshop]
 ID=c_man
-NAME=#NAMES_HUMANMALE the mage
+NAME=#NAMES_HUMANMALE 法师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3050,7 +3050,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mageshop_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the mage
+NAME=#NAMES_HUMANFEMALE 法师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3110,7 +3110,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mapmaker]
 ID=c_man
-NAME=#NAMES_HUMANMALE the mapmaker
+NAME=#NAMES_HUMANMALE 制图师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3167,7 +3167,7 @@ ON=@NPCRestock
 
 [CHARDEF c_mapmaker_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the mapmaker
+NAME=#NAMES_HUMANFEMALE 制图师
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3223,7 +3223,7 @@ ON=@NPCRestock
 
 [CHARDEF c_miller]
 ID=c_man
-NAME=#NAMES_HUMANMALE the miller
+NAME=#NAMES_HUMANMALE 磨坊工
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3277,7 +3277,7 @@ ON=@NPCRestock
 
 [CHARDEF c_miller_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the miller
+NAME=#NAMES_HUMANFEMALE 磨坊工
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3330,7 +3330,7 @@ ON=@NPCRestock
 
 [CHARDEF c_minter]
 ID=c_man
-NAME=#NAMES_HUMANMALE the minter
+NAME=#NAMES_HUMANMALE 铸币人
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3382,7 +3382,7 @@ ON=@Create
 
 [CHARDEF c_minter_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the minter
+NAME=#NAMES_HUMANFEMALE 铸币人
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3433,7 +3433,7 @@ ON=@Create
 
 [CHARDEF c_provis]
 ID=c_man
-NAME=#NAMES_HUMANMALE the provisioner
+NAME=#NAMES_HUMANMALE 供应商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3492,7 +3492,7 @@ ON=@NPCRestock
 
 [CHARDEF c_provis_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the provisioner
+NAME=#NAMES_HUMANFEMALE 供应商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3551,7 +3551,7 @@ ON=@NPCRestock
 
 [CHARDEF c_rancher]
 ID=c_man
-NAME=#NAMES_HUMANMALE the rancher
+NAME=#NAMES_HUMANMALE 牧场主
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3611,7 +3611,7 @@ ON=@NPCRestock
 
 [CHARDEF c_rancher_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the rancher
+NAME=#NAMES_HUMANFEMALE 牧场主
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3670,7 +3670,7 @@ ON=@NPCRestock
 
 [CHARDEF c_scribe]
 ID=c_man
-NAME=#NAMES_HUMANMALE the scribe
+NAME=#NAMES_HUMANMALE 抄写员
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3736,7 +3736,7 @@ ON=@NPCRestock
 
 [CHARDEF c_scribe_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the scribe
+NAME=#NAMES_HUMANFEMALE 抄写员
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3799,7 +3799,7 @@ ON=@NPCRestock
 
 [CHARDEF c_shepherd]
 ID=c_man
-NAME=#NAMES_HUMANMALE the shepherd
+NAME=#NAMES_HUMANMALE 牧羊人
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3855,7 +3855,7 @@ ON=@NPCRestock
 
 [CHARDEF c_shepherd_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the shepherdess
+NAME=#NAMES_HUMANFEMALE 牧羊女
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3910,7 +3910,7 @@ ON=@NPCRestock
 
 [CHARDEF c_shipwright]
 ID=c_man
-NAME=#NAMES_HUMANMALE the shipwright
+NAME=#NAMES_HUMANMALE 造船匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -3964,7 +3964,7 @@ ON=@NPCRestock
 
 [CHARDEF c_shipwright_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the shipwright
+NAME=#NAMES_HUMANFEMALE 造船匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4017,7 +4017,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tailor]
 ID=c_man
-NAME=#NAMES_HUMANMALE the tailor
+NAME=#NAMES_HUMANMALE 裁缝
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4074,7 +4074,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tailor_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the tailor
+NAME=#NAMES_HUMANFEMALE 裁缝
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4130,7 +4130,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tanner]
 ID=c_man
-NAME=#NAMES_HUMANMALE the tanner
+NAME=#NAMES_HUMANMALE 制革匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4191,7 +4191,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tanner_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the tanner
+NAME=#NAMES_HUMANFEMALE 制革匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4250,7 +4250,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tavernkeeper]
 ID=c_man
-NAME=#NAMES_HUMANMALE the tavernkeeper
+NAME=#NAMES_HUMANMALE 酒馆老板
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4309,7 +4309,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tavernkeeper_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the tavernkeeper
+NAME=#NAMES_HUMANFEMALE 酒馆老板
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4367,7 +4367,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tinker]
 ID=c_man
-NAME=#NAMES_HUMANMALE the tinker
+NAME=#NAMES_HUMANMALE 修补匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4425,7 +4425,7 @@ ON=@NPCRestock
 
 [CHARDEF c_tinker_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the tinker
+NAME=#NAMES_HUMANFEMALE 修补匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4480,7 +4480,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vegiseller]
 ID=c_man
-NAME=#NAMES_HUMANMALE the vegetable seller
+NAME=#NAMES_HUMANMALE 蔬菜商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4534,7 +4534,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vegiseller_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the vegetable seller
+NAME=#NAMES_HUMANFEMALE 蔬菜商
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4587,7 +4587,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vet]
 ID=c_man
-NAME=#NAMES_HUMANMALE the veterinarian
+NAME=#NAMES_HUMANMALE 兽医
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4644,7 +4644,7 @@ ON=@NPCRestock
 
 [CHARDEF c_vet_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the veterinarian
+NAME=#NAMES_HUMANFEMALE 兽医
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4700,7 +4700,7 @@ ON=@NPCRestock
 
 [CHARDEF c_waiter]
 ID=c_man
-NAME=#NAMES_HUMANMALE the waiter
+NAME=#NAMES_HUMANMALE 服务员
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4755,7 +4755,7 @@ ON=@NPCRestock
 
 [CHARDEF c_waiter_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the waitress
+NAME=#NAMES_HUMANFEMALE 女服务员
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4809,7 +4809,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blade]
 ID=c_man
-NAME=#NAMES_HUMANMALE the weaponsmith
+NAME=#NAMES_HUMANMALE 武器匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4879,7 +4879,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blade_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the weaponsmith
+NAME=#NAMES_HUMANFEMALE 武器匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -4947,7 +4947,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blunt]
 ID=c_man
-NAME=#NAMES_HUMANMALE the weaponsmith
+NAME=#NAMES_HUMANMALE 武器匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -5016,7 +5016,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaponsmith_blunt_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the weaponsmith
+NAME=#NAMES_HUMANFEMALE 武器匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -5084,7 +5084,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaver]
 ID=c_man
-NAME=#NAMES_HUMANMALE the weaver
+NAME=#NAMES_HUMANMALE 织布匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime
@@ -5141,7 +5141,7 @@ ON=@NPCRestock
 
 [CHARDEF c_weaver_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the weaver
+NAME=#NAMES_HUMANFEMALE 织布匠
 DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_prime

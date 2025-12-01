@@ -6,7 +6,7 @@ VERSION=X1
 
 [CHARDEF c_guard]
 ID=c_man
-NAME=#NAMES_HUMANMALE the guard
+NAME=#NAMES_HUMANMALE 卫兵
 //DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_default
@@ -60,7 +60,7 @@ ON=@NPCRefuseItem
 
 [CHARDEF c_guard_f]
 ID=c_woman
-NAME=#NAMES_HUMANFEMALE the guard
+NAME=#NAMES_HUMANFEMALE 卫兵
 //DESIRES=i_gold
 AVERSIONS=t_trap
 TSPEECH=spk_human_default
