@@ -1084,6 +1084,9 @@ INTERRUPT=100.0,100.0
 ON=@Success
    LOCAL.AREARADIUS=<eval 1+(<MAGERY>/150)>
 ON=@Effect
+   IF (<UID> == <SRC>)
+      RETURN 1
+   ENDIF
    LOCAL.DAMAGETYPE=(<DEF.dam_physical>|<DEF.dam_magic>)
 
 [SPELL 58]
