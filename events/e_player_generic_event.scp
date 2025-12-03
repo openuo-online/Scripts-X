@@ -35,4 +35,11 @@ LOCAL.ITEMDAMAGECHANCE=3    //多少概率掉武器耐久
 ON=@GetHit
 LOCAL.ITEMDAMAGECHANCE=3    //多少概率掉盔甲、盾耐久
 
+ON=@HitTry
+ACTDIFF=1000    //100% hit chance, for test
+
+// ON=@MurderMark
+// ARGN1=<ARGN1>-1
+// sayu <ARGN1>
+
 [eof]

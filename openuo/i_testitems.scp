@@ -189,10 +189,10 @@ ON=@Create
     COLOR=0237
     HITPOINTS={5500 6500}
 ON=@Equip
-    SRC.ARCHERY = <SRC.ARCHERY> + 10.0
+   //  SRC.ARCHERY = <SRC.ARCHERY> + 10.0
     SRC.EVENTS +e_elven_bow
 ON=@Unequip
-    SRC.ARCHERY = <SRC.ARCHERY> - 10.0
+   //  SRC.ARCHERY = <SRC.ARCHERY> - 10.0
     SRC.EVENTS -e_elven_bow
 
 [EVENTS e_elven_bow]
@@ -201,9 +201,13 @@ IF (<ARGO>)
     REF1 = <ARGO>
     IF (<R10> < 1)
         // SAYU ***精 灵 祝 福***
-        ARGN1 = <ARGN1> * 2
+        ARGN1 = <ARGN1> * 3
         SRC.EFFECT 3,i_fx_glow_spike,1,16,0
    ELIF (<R10> < 3)
       SRC.SPELLEFFECT s_harm,100.0,<UID>
+   ELIF (<R10> < 3)
+      SRC.SPELLEFFECT s_lightning,100.0,<UID>
+   ELIF (<R10> < 3)
+      SRC.SPELLEFFECT s_flamestrike,100.0,<UID>
    ENDIF
 ENDIF
