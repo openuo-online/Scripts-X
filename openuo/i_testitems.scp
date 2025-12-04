@@ -211,3 +211,42 @@ IF (<ARGO>)
       SRC.SPELLEFFECT s_flamestrike,100.0,<UID>
    ENDIF
 ENDIF
+
+[ITEMDEF i_nb_bokuto]
+ID=i_bokuto
+NAME=nb bokuto
+TYPE=t_weapon_sword
+DAM=33,55
+RANGE=2
+SPEED=200
+TEVENTS=ei_equipitem
+ON=@Create
+   COLOR=0485
+   HITPOINTS={8500 9500}
+ON=@Equip
+    SRC.EVENTS +e_nb_bokuto
+ON=@Unequip
+    SRC.EVENTS -e_nb_bokuto
+
+[EVENTS e_nb_bokuto]
+ON=@Hit
+IF (<ARGO>)
+   REF1 = <UID>
+   SRC.SPELLEFFECT s_flamestrike,100.0,<UID>
+   SRC.SPELLEFFECT s_poison,100.0,<UID>
+   IF (<SRC.STAM> >= 50)
+      SRC.STAM = <SRC.STAM> - 50
+   ELSE
+      SRC.STAM = 0
+   ENDIF
+   IF (<SRC.MANA> >= 50)
+      SRC.MANA = <SRC.MANA> - 50
+   ELSE
+      SRC.MANA = 0
+   ENDIF
+   FORCHARS 5
+      IF (!<ISPLAYER>) && (<SRC> != <UID>)
+         SPELLEFFECT s_lightning,100.0,<REF1>
+      ENDIF
+   ENDFOR
+ENDIF
