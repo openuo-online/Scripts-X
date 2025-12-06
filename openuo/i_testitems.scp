@@ -245,7 +245,7 @@ IF (<ARGO>)
       SRC.MANA = 0
    ENDIF
    FORCHARS 5
-      IF (!<ISPLAYER>) && (<SRC> != <UID>)
+      IF (!<ISPLAYER>) && (<SRC> != <UID>) && (<NPC> >= brain_monster)
          SPELLEFFECT s_lightning,100.0,<REF1>
       ENDIF
    ENDFOR
