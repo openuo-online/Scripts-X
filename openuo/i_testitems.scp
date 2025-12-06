@@ -217,7 +217,7 @@ ID=i_bokuto
 NAME=nb bokuto
 TYPE=t_weapon_sword
 DAM=33,55
-RANGE=5
+RANGE=3
 SPEED=200
 TEVENTS=ei_equipitem
 ON=@Create
@@ -233,6 +233,7 @@ ON=@Hit
 IF (<ARGO>)
    REF1 = <UID>
    SRC.SPELLEFFECT s_flamestrike,100.0,<UID>
+   SRC.SPELLEFFECT s_explosion,100.0,<UID>
    SRC.SPELLEFFECT s_poison,100.0,<UID>
    IF (<SRC.STAM> >= 50)
       SRC.STAM = <SRC.STAM> - 50
@@ -244,9 +245,11 @@ IF (<ARGO>)
    ELSE
       SRC.MANA = 0
    ENDIF
-   FORCHARS 5
+   FORCHARS 8
       IF ((!<ISPLAYER>) && (<NPC> > 7) && (<SRC> != <UID>))
          SPELLEFFECT s_lightning,100.0,<REF1>
+         SPELLEFFECT s_explosion,100.0,<REF1>
+         SPELLEFFECT s_poison,100.0,<REF1>
       ENDIF
    ENDFOR
 ENDIF
