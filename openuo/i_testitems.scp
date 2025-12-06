@@ -217,7 +217,7 @@ ID=i_bokuto
 NAME=nb bokuto
 TYPE=t_weapon_sword
 DAM=33,55
-RANGE=2
+RANGE=5
 SPEED=200
 TEVENTS=ei_equipitem
 ON=@Create
@@ -245,7 +245,7 @@ IF (<ARGO>)
       SRC.MANA = 0
    ENDIF
    FORCHARS 5
-      IF (!<ISPLAYER>) && (<SRC> != <UID>) && (<NPC> >= brain_monster)
+      IF (!<ISPLAYER>) && (<brain> > 7) && (<SRC> != <UID>)
          SPELLEFFECT s_lightning,100.0,<REF1>
       ENDIF
    ENDFOR
