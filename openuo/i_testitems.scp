@@ -101,17 +101,20 @@ ON=@Create
 ON=@Step
    // 当角色踩上踏板时触发
    IF (<SRC.ISPLAYER>)
-      // 如果不是满血状态，恢复30点生命值
-      IF (<SRC.HITS> < <SRC.MAXHITS>)
-         LOCAL.HEAL=30
-         // 确保不会超过最大生命值
-         IF (<EVAL <SRC.HITS> + <LOCAL.HEAL>> > <SRC.MAXHITS>)
-            SRC.HITS=<SRC.MAXHITS>
-         ELSE
-            SRC.HITS += <LOCAL.HEAL>
+      // 检查玩家是否存活
+      IF !(<SRC.FLAGS> & statf_dead)
+         // 如果不是满血状态，恢复30点生命值
+         IF (<SRC.HITS> < <SRC.MAXHITS>)
+            LOCAL.HEAL=30
+            // 确保不会超过最大生命值
+            IF (<EVAL <SRC.HITS> + <LOCAL.HEAL>> > <SRC.MAXHITS>)
+               SRC.HITS=<SRC.MAXHITS>
+            ELSE
+               SRC.HITS += <LOCAL.HEAL>
+            ENDIF
+            // 显示治疗效果
+            SRC.EFFECT 3,i_fx_heal_effect,6,15,1
          ENDIF
-         // 显示治疗效果
-         SRC.EFFECT 3,i_fx_heal_effect,6,15,1
       ENDIF
    ENDIF
    RETURN 0
