@@ -4,10 +4,15 @@
 //****************************************************************************
 VERSION=X1
 
+// Generic event to all players.
 [events e_player_generic_event]
-//Generic event to all players
 
 ON=@Login
+    // If enabled in configuration, chatname will be changed to character name on login.
+    if (<def.config.chatname_char> == 1)
+        account.chatname = <src.name>
+    endif
+
     SAYUA 052,,,,Welcome to OpenUO, a completely free world. Just enjoy and have fun!
     //ACCOUNT.LANG=CHT
     //RETURN 0

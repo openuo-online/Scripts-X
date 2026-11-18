@@ -1,13 +1,16 @@
-## --This script pack is in developement---
+# ScriptPack for SphereServer X
 
-This script pack is designed to work with [![sphere X version](https://github.com/Sphereserver/Source-X)](https://github.com/Sphereserver/Source-X)
+**NOTE:** This script pack is in development and is designed to work with [SphereServer X](https://github.com/Sphereserver/Source-X).
 
-To be able use this pack correctly here the events you must add in ini
+To be able to use this pack correctly, the following events has to be set in your `sphere.ini` (they are set by default):
+
+```ini
 // Events related to all NPCs
 EventsPet=e_npc_generic_event
 
 // Events related to all players
 EventsPlayer=e_player_generic_event,e_player_crafting_event
+```
 
 ## ToDo
 * Test map1 locations (is every teleport and area correct?)
